@@ -9,9 +9,7 @@ do
   echo "1. Create a new entry."
   echo "2. Read an existing entry."
   echo "3. Quit."
-
   read choice
-
   case $choice in
     1)
       mkdir -p entries entries/$(date +%d-%m-%Y)
@@ -22,7 +20,6 @@ do
       rm entries/$(date +%d-%m-%Y)/$name
       echo "Entry is added."
       ;;
-
     2)
       echo "These are all the dates you have an entry on."
       ls entries
@@ -35,7 +32,6 @@ do
       echo " "
       openssl enc -d -aes-256-cbc -salt -in entries/$date/$name -pass pass:$pass
       ;;
-
     3)
       echo "See you later .."
       loop=2
