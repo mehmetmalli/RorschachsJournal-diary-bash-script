@@ -1,0 +1,1 @@
+# RorschachsJournal-diary-bash-script
