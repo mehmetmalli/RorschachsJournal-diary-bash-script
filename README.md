@@ -1,3 +1,4 @@
+# RorschachsJournal Diary (Bash Script)  
 This is a bash script.   
 It should work right off the box on macOS and Linux distros.  
 It uses OpenSSL to secure your entries.  
