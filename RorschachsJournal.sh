@@ -15,7 +15,7 @@ do
       mkdir -p entries entries/$(date +%d-%m-%Y)
       echo "Enter a name for your entry: "
       read name
-      vim entries/$(date +%d-%m-%Y)/$name
+      nano entries/$(date +%d-%m-%Y)/$name
       openssl enc -aes-256-cbc -salt -in entries/$(date +%d-%m-%Y)/$name -out entries/$(date +%d-%m-%Y)/$name.rj -pass pass:$pass
       rm entries/$(date +%d-%m-%Y)/$name
       echo "Entry is added."
